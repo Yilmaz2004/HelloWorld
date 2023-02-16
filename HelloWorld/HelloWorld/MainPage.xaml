@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.MainPage">
+
+    <StackLayout 
+        Margin="10,20,10,70"
+        Padding="10"
+        VerticalOptions="Center">
+        <Entry
+            x:Name="usernameEntry"
+            Keyboard="Email"
+            Placeholder="username"/>
+        <Entry
+            x:Name="passwordEntry"
+            IsPassword="True"
+            Placeholder="password"/>
+        <Label
+            x:Name="errorLabel"
+            TextColor="blue"
+            Text=""/>
+        <Button
+            x:Name="LoginButton"
+            Text="Login"
+            Margin="100,25"
+            Clicked="LoginButton_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
